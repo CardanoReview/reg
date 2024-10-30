@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "CardanoReview"
+    },
+    "motivations": {
+      "@value": "I want to be a DRep to actively contribute to the Cardano ecosystem and empower our community. My passion for decentralization stems from my experiences in Web3 and the Cardano ecosystem.\n\nI have been involved in the Web3 space for some time now. And I have served in such rolls as project manager, community leader, and technical development. These roles have taught me the importance of listening and collaboration. Personally, I’ve seen firsthand how effective and positive representation can drive positive change in communities.\n\nAs a Cardano DRep, I aim to leverage my skills and experiences to amplify community voices, promote transparency, and support initiatives that foster growth and inclusivity within Cardano.\n\n"
+    },
+    "objectives": {
+      "@value": "I am passionate about decentralization and community engagement within the Cardano ecosystem. My background in Web3 equips me to effectively represent diverse voices.\n\nMy objectives as a DRep:\n\n1. Empower Voices: Ensure all community members are heard and represented in decision-making processes.\n\n2. Promote Transparency: Advocate for clear communication around governance decisions and their impacts.\n\n3. Foster Collaboration: Build connections between different groups to encourage innovation and knowledge-sharing.\n\n4. Support Sustainability: Champion initiatives that prioritize long-term growth and ethical practices.\n\n5. Educate the Community: Provide resources to help people understand governance processes and how they can participate.\n\nThrough these objectives, I strive to enhance the Cardano community and contribute to a thriving ecosystem.\n\n"
+    },
+    "paymentAddress": {
+      "@value": "addr1qxsam4axvtftnyz4urfunq803fcyp7g6ka2gpvlaxd0g94vvlzn2zpfnx5947uq8eavmdc2thm58qgqj86ejwz8vk4aqfg0xfl"
+    },
+    "qualifications": {
+      "@value": "1. Community Engagement: Extensive experience in facilitating discussions and gathering feedback from diverse groups, and ensuring all voices are represented.\n\n2. Blockchain Knowledge: A strong understanding of blockchain technology and the Cardano ecosystem, gained through my studies at the Cardano Academy. There I earned my Cardano Blockchain Certified Associate (CBCA) certificate.\n\n3. Project Management: Ability to manage projects effectively, ensuring timely execution and collaboration among team members.\n\n4. Communication Skills: Excellent verbal and written communication skills, allowing me to convey complex ideas clearly and build relationships within the community.\n\n5. Problem-Solving: Strong analytical skills that enable me to assess challenges and develop practical solutions that align with Cardano's interests.\n\n6. Commitment to Decentralization: Commitment to the principles of decentralization, ensuring that governance processes remain inclusive and transparent.\n\n\n"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "My X Account"
+        },
+        "uri": {
+          "@value": "https://x.com/cardanoreview"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "My Linktree"
+        },
+        "uri": {
+          "@value": "https://linktr.ee/CardanoReview"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "I love Cardano, AI, Memes, and Web3"
+        },
+        "uri": {
+          "@value": "https://x.com/cardanoreview"
+        }
+      }
+    ]
+  }
+}
